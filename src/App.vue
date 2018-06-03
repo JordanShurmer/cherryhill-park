@@ -40,7 +40,7 @@
             <h3 class="headline">Hours</h3>
             <div class="text">
               <p>
-                The pool is open, to members, Dawn to Dusk.
+                The pool is open to members Dawn to Dusk.
               </p>
               <p>
                 Open during the summer season, typically May through September
@@ -169,10 +169,10 @@
 
         .main
           margin-right: 2em
-          max-width: 65%
           padding: 0 1.5em 1.5em
         .aside
           padding: 0 1.5em 1.5em
+          max-width: 26%
           margin-bottom: 0
 
   button.flat {
