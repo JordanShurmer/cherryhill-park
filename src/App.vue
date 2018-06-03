@@ -28,12 +28,15 @@
             <h2 class="headline">About</h2>
             <div class="text">
               <p>
-                The Cherryhill Park pool includes a diving board, kiddie pool, restrooms, an open grill, and covered
+                Cherryhill Park Pool is a local community pool in Knoxville, TN.
+              </p>
+              <p>
+                The pool includes a diving board, kiddie pool, restrooms, an open grill, and covered
                 picnic tables. Open to members from the Cherryhill Park neighborhood in Knoxville, TN and other nearby
                 neighborhoods.
               </p>
               <p>
-                We are a community pool fully managed and funded by the members of the community.
+                We are a local community pool fully managed and funded by the members of the community.
               </p>
             </div>
 
