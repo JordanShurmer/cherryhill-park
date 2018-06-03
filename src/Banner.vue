@@ -41,7 +41,7 @@
       }
     }
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 740px) {
       max-height: 70vh
       overflow: hidden
 

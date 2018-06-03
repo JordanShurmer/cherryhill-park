@@ -5,7 +5,6 @@ function queryPresent(q) {
 export default {
   install(Vue, options) {
     Vue.prototype.$flags = {
-      payments: queryPresent('payments'),
       rules: queryPresent('rules')
     }
   }
