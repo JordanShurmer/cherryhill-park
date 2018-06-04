@@ -95,7 +95,7 @@
       </div>
     </div>
 
-    <new-member-modal ref="modal"></new-member-modal>
+    <new-member-modal @close="modalclose" @open="modalopen" ref="modal"></new-member-modal>
   </div>
 </template>
 
@@ -112,6 +112,14 @@
     components: {NewMemberModal, Payments, Banner},
     data() {
       return {}
+    },
+    methods: {
+      modalclose() {
+        window.location.hash = '';
+      },
+      modalopen() {
+        window.location.hash = 'new-member'
+      }
     },
     mounted() {
       if (window.location.hash === '#new-member') {
