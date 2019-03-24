@@ -1,0 +1,14 @@
+@import url('/typography.css');
+@import url('/layout.css');
+@import url('/coloring.css');
+
+.money-input {
+  border: 1px inset #ccc;
+
+}
+.money-input input {
+  border: 0;
+}
+.money-input input:focus {
+  outline: 0;
+}
