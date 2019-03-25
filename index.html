@@ -1,163 +1,172 @@
-  <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-    <meta charset="utf-8">
-    <title>Cherryhill Park Pool</title>
+  <meta charset="utf-8">
+  <title>Cherryhill Park Pool</title>
 
-    <meta name="description" content="Cherryhill Park Pool is a local community pool in Knoxville, TN. Includes a diving board, a kiddie pool, restrooms, open grill, and covered picnic tables. Open to members from around the area. Find out more, and how to join.">
+  <meta name="description" content="Cherryhill Park Pool is a local community pool in Knoxville, TN. Includes a diving board, a kiddie pool, restrooms, open grill, and covered picnic tables. Open to members from around the area. Find out more, and how to join.">
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120053001-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120053001-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-      gtag('config', 'UA-120053001-1');
-    </script>
+    gtag('js', new Date());
 
-    <link rel="stylesheet" href="/chp.css">
+    gtag('config', 'UA-120053001-1');
+  </script>
 
-  </head>
+  <link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/2.6.0.2/lib/paper-dialog/paper-dialog.html">
+  <link rel="stylesheet" href="/chp.css">
 
-  <body>
+</head>
 
-    <main class="site">
+<body>
 
-      <h1>Cherryhill Park Pool</h1>
+<main class="site">
 
-      <div class="lead row">
+  <h1>Cherryhill Park Pool</h1>
 
-        <img class="one-third" src="/sign.jpg" alt="Cherryhill">
+  <div class="lead row">
 
-        <section class="two-thirds">
-          <h2 id="about">About</h2>
-          <p>
-            Cherryhill Park Pool is a local community pool in Knoxville, TN. Open to members from the Cherryhill Park neighborhood in Knoxville, TN and other nearby neighborhoods. Fully managed and funded by the members of the community.
-          </p>
+    <img class="one-third" src="/sign.jpg" alt="Cherryhill">
 
-          <p>
-            The pool includes
-            <ul>
-              <li>diving board</li>
-              <li>kiddie pool</li>
-              <li>restrooms</li>
-              <li>an open grill</li>
-              <li>covered picnic tables</li>
-            </ul>
-          </p>
+    <section class="two-thirds">
+      <h2>Hours</h2>
 
-          <p>
-          </p>
-        </section>
-      </div>
+      <p>
+        Dawn to Dusk
+      </p>
+      <p>
+        Summer season (typically May through September)
+      </p>
 
-      <div class="row">
-        <aside class="one-half">
+    </section>
+  </div>
 
-          <h2>Membership</h2>
-          <p>
-            To pay online for your membership use the PayPal link below, then send us an email and we will coordinate a time and place to get you a pool key.
-          </p>
-          <p>
-            Annual membership dues are $325.
-          </p>
+  <div class="row">
+    <aside class="one-third">
 
-          <div class="row">
-
-            <div class="payment one-half">
-
-              <span class="label">1-Year Membership: $325</span>
-
-              <div id="paypal-1-year"></div>
-
-              <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="TRHWRESM3KEKW">
-                <input class="paypal-image" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-              </form> -->
-
-            </div>
-
-            <div class="payment one-half">
-              <span class="label">One Time Donation:</span>
-              <br>
-              <span class="money-input">
-                $&nbsp;<input type="number" min="0.01" step="0.01" placeholder="25.0" id="donation">
-              </span>
-              <button id="do-donation" class="paypal-button">Pay Now</button>
-
-              <div id="paypal-donate"></div>
-              <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="VDUPLSX54BR66">
-                <input class="paypal-image" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-              </form>
- -->
-            </div>
-          </div>
-
-        </aside>
-
-        <section class="one-half">
-          <h2>Hours</h2>
-
-          <p>
-            Dawn to Dusk
-          </p>
-          <p>
-            Summer season (typically May through September)
-          </p>
-
-        </section>
-      </div>
+      <h2>Membership</h2>
+      <p>
+        To pay online for your membership use the PayPal link below, then send us an email and we will coordinate a time and place to get you a pool key.
+      </p>
+      <p>
+        Annual membership dues are $325.
+      </p>
 
       <div class="row">
-        <section class="one-half">
 
-          <h3>Location</h3>
+        <div class="payment">
+
+          <span class="label">1-Year Membership: $325</span>
+
+          <div id="paypal-1-year"></div>
+        </div>
+
+
+        <div class="payment">
+          <hr class="divider">
+          <span class="label">One Time Donation:</span>
           <p>
-            Cherryhill Park pool is located on Cherrylog rd, just off Pleasant Ridge, near Victor Ashe Park.
-          </p>
-          <p>
-            View on
-            <a href="https://www.google.com/maps/place/35%C2%B058'58.0%22N+83%C2%B059'19.4%22W/@35.9827794,-83.9894151,169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d35.982778!4d-83.9887131" target="_blank">
-              Google Maps
-            </a>
+            $<input type="number" min="0.00" step="0.01" value="25.00" id="donation">
+            <button id="do-donation">Donate</button>
           </p>
 
-          <a href="https://www.google.com/maps/place/35%C2%B058'58.0%22N+83%C2%B059'19.4%22W/@35.9827794,-83.9894151,169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d35.982778!4d-83.9887131" target="_blank">
-            <img class="map" src="https://api.mapbox.com/styles/v1/jshurmer/cjhsjbzew0i542tpkxegqi23b/static/-83.99000,35.98000,13.1,0,0/660x380@2x?access_token=pk.eyJ1IjoianNodXJtZXIiLCJhIjoiY2pkM3dpZ3RwMHA4bTJxcWZnOXd4ZDdzMCJ9.ntCJOHn6dfVJjRhvfEuWpw" alt="area map">
+          <div id="paypal-donate"></div>
 
-          </a>
-        </section>
-        <section class="one-half">
-          <h2 class="headline">Contact Info</h2>
-          <div class="text">
-            For more information, or to inquire about joining contact us at <a href="mailto:cherryhillparkpool@gmail.com">cherryhillparkpool@gmail.com</a>
-          </div>
-        </section>
+        </div>
       </div>
 
-    </main>
+    </aside>
 
-    <!-- SANDBOX: -->
-    <script src="https://www.paypal.com/sdk/js?client-id=AQIadMJOqpvS3tRXzKmilOac01cb77QA-Uhh8mLQIAhrs9Un0OCvskLIpUc2XLYhuQ41YWgXYuhSYAYn"></script>
+    <section class="one-half">
+      <h2 id="about">About</h2>
+      <p>
+        Cherryhill Park Pool is a local community pool in Knoxville, TN. Open to members from the Cherryhill Park neighborhood in Knoxville, TN and other nearby neighborhoods. Fully managed and funded by the members of the community.
+      </p>
 
-    <!-- LIVE: -->
-    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AeX5ZMvQiHyDxcLmrs8PuG-JUIabR3YzHGX4Z5ZwCEfGp2BTYQAhNsUZJwERV5b9eBdrYC0M9d-MDghf"></script> -->
+      <p>
+        The pool includes
+      <ul>
+        <li>diving board</li>
+        <li>kiddie pool</li>
+        <li>restrooms</li>
+        <li>an open grill</li>
+        <li>covered picnic tables</li>
+      </ul>
+      </p>
 
-    <script src="/chp.js"></script>
-  </body>
+      <p>
+      </p>
+    </section>
+  </div>
 
-  </html>
+  <div class="row">
+    <section class="one-half">
+
+      <h3>Location</h3>
+      <p>
+        Cherryhill Park pool is located on Cherrylog rd, just off Pleasant Ridge, near Victor Ashe Park.
+      </p>
+      <p>
+        View on
+        <a href="https://www.google.com/maps/place/35%C2%B058'58.0%22N+83%C2%B059'19.4%22W/@35.9827794,-83.9894151,169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d35.982778!4d-83.9887131" target="_blank">
+          Google Maps
+        </a>
+      </p>
+
+      <a href="https://www.google.com/maps/place/35%C2%B058'58.0%22N+83%C2%B059'19.4%22W/@35.9827794,-83.9894151,169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d35.982778!4d-83.9887131" target="_blank">
+        <img class="map" src="https://api.mapbox.com/styles/v1/jshurmer/cjhsjbzew0i542tpkxegqi23b/static/-83.99000,35.98000,13.1,0,0/660x380@2x?access_token=pk.eyJ1IjoianNodXJtZXIiLCJhIjoiY2pkM3dpZ3RwMHA4bTJxcWZnOXd4ZDdzMCJ9.ntCJOHn6dfVJjRhvfEuWpw" alt="area map">
+
+      </a>
+    </section>
+    <section class="one-half">
+      <h2 class="headline">Contact Info</h2>
+      <div class="text">
+        For more information, or to inquire about joining contact us at <a href="mailto:cherryhillparkpool@gmail.com">cherryhillparkpool@gmail.com</a>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<div id="thanks-modal" class="dialog">
+  <div class="content">
+    <h1>Thank You <span id="name"></span>!</h1>
+
+    <p>
+      You're <span id="type">payment</span> has been received.
+    </p>
+
+    <section id="new-member" style="display: none;">
+      <p>
+        We will contact you at <span id="email" class="mono"></span> to coordinate getting you a key to the pool! If you don't hear from us in a few days please send us an email at <a href="mailto:members@cherryhillparkpool.org">members@cherryhillparkpool.org</a>.
+      </p>
+    </section>
+
+    <p>
+      Enjoy the pool 🏊 🤽 !
+    </p>
+  </div>
+</div>
+
+<!-- SANDBOX: -->
+<script src="https://www.paypal.com/sdk/js?client-id=AQIadMJOqpvS3tRXzKmilOac01cb77QA-Uhh8mLQIAhrs9Un0OCvskLIpUc2XLYhuQ41YWgXYuhSYAYn"></script>
+
+<!-- LIVE: -->
+<!-- <script src="https://www.paypal.com/sdk/js?client-id=AeX5ZMvQiHyDxcLmrs8PuG-JUIabR3YzHGX4Z5ZwCEfGp2BTYQAhNsUZJwERV5b9eBdrYC0M9d-MDghf"></script> -->
+
+<script src="/chp.js"></script>
+</body>
+
+</html>

@@ -4,9 +4,13 @@
   display: inline-block;
 }
 
+.mono {
+  font-family: 'Source Code Pro', monospace;
+}
+
 
 /* https://type-scale.com/?size=16&scale=1.125&text=A%20Visual%20Type%20Scale&font=Noto%20Serif&fontweight=400&bodyfont=Noto%20Sans&bodyfontweight=400&lineheight=1.45&backgroundcolor=white&fontcolor=%233f3f3f&preview=false */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif|Source+Code+Pro');
 
 html {font-size: 16px;}
 

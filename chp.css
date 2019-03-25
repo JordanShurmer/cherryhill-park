@@ -1,14 +1,25 @@
 @import url('/typography.css');
 @import url('/layout.css');
 @import url('/coloring.css');
+@import url('/modal.css');
 
-.money-input {
-  border: 1px inset #ccc;
+body.no-scroll {
+  overflow: hidden;
+}
 
+input#donation {
+  max-width: 44%;
+  margin-right: 6px;
 }
-.money-input input {
-  border: 0;
+input#donation:focus {
+  outline: none;
 }
-.money-input input:focus {
-  outline: 0;
+
+button#do-donation {
+  cursor: pointer;
 }
+
+hr.divider {
+  margin-bottom: 1.5em;;
+}
+
