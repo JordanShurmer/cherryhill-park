@@ -1,13 +1,4 @@
 <template>
-  <div class="banner">
-    <div class="large">
-      <img src="./assets/pool-prime.jpg" alt="Cherryhill Park Pool">
-    </div>
-    <div class="small">
-      <img src="./assets/sign.jpg" alt="Cherryhill Park Pool">
-      <img src="./assets/pool-small-1.jpg" alt="Cherryhill Park Pool">
-    </div>
-  </div>
 </template>
 
 <script>

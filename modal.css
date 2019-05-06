@@ -1,22 +1,3 @@
 .dialog {
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, .85);
-
-  /*this is re-set to flex by theJS*/
   display: none;
-}
-
-.dialog .content {
-  background: whitesmoke;
-  width: 50vw;
-  padding: 2em 5em 2em;
 }

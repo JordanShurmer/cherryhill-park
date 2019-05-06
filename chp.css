@@ -1,25 +1,11 @@
 @import url('/typography.css');
 @import url('/layout.css');
-@import url('/coloring.css');
-@import url('/modal.css');
+@import url('./colours.css');
+@import url('./modal.css');
 
-body.no-scroll {
-  overflow: hidden;
+html {
+  box-sizing: border-box
 }
-
-input#donation {
-  max-width: 44%;
-  margin-right: 6px;
+*, *::before, *::after {
+  box-sizing: inherit
 }
-input#donation:focus {
-  outline: none;
-}
-
-button#do-donation {
-  cursor: pointer;
-}
-
-hr.divider {
-  margin-bottom: 1.5em;;
-}
-
