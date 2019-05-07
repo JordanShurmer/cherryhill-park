@@ -24,6 +24,10 @@ img {
   margin: 0 auto 5em;
 }
 
+.info {
+  overflow: hidden;
+}
+
 .payment--annual {
   border-bottom: 3px double;
 }
