@@ -113,8 +113,8 @@ function populateDyn(config, element) {
       value,
       dynElement
     })
-    if (typeof value == "boolean" && value) {
-      dynElement.hidden = false;
+    if (typeof value == "boolean") {
+      dynElement.hidden = !value;
     } else {
       dynElement.innerHTML = value;
     }
@@ -145,4 +145,12 @@ function thanks(config) {
   thanksClose.addEventListener('click', event => {
     thanksModal.classList.remove('open');
   })
+}
+
+
+/**
+ * polyfill for NodeList for Edge
+ */
+if (typeof NodeList !== "undefined" && NodeList.prototype && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
 }
