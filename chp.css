@@ -3,6 +3,10 @@
 @import url('./colours.css');
 @import url('./modal.css');
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
 html {
   box-sizing: border-box
 }

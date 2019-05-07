@@ -1,3 +1,38 @@
-.dialog {
+.modal {
   display: none;
+  z-index: 9001;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.modal.open {
+  display: block;
+}
+
+.modal__content {
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+.modal__body {
+  padding: 10% 5%;
+  text-align: center;
+  flex: 1;
+}
+
+.modal__footer {
+  border-top: 2px solid rgba(0,0,0,.2);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.modal__button {
+  font-size: 1.728em;
+  padding: 20px 9vw;
 }
