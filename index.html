@@ -8,8 +8,7 @@
   <meta charset="utf-8">
   <title>Cherryhill Park Pool</title>
 
-  <meta name="description"
-    content="Cherryhill Park Pool is a local community pool in Knoxville, TN. Includes a diving board, a kiddie pool, restrooms, open grill, and covered picnic tables. Open to members from around the area. Find out more, and how to join.">
+  <meta name="description" content="Cherryhill Park Pool is a local community pool in Knoxville, TN. Includes a diving board, a kiddie pool, restrooms, open grill, and covered picnic tables. Open to members from around the area. Find out more, and how to join.">
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -96,17 +95,22 @@
 
           <h2>Membership</h2>
           <p>
-            Annual membership dues are $325.
+            Annual membership dues are $260 for new members, $325 for returning members.
           </p>
           <p>
-            To pay online for your membership use the PayPal link below, then send us an email and we will coordinate
-            a time and place to get you a pool key.
+            To pay online for your membership use the PayPal link below, then send us an email and we will coordinate a time and place to get you a pool key.
           </p>
+
 
           <div class="payments">
             <div class="payment payment--annual">
 
-              <div class="payment__label">1-Year Membership: $325</div>
+              <select class="info__options" name="membership-type" id="membership-type">
+                <option value="new">New</option>
+                <option value="returning">Returning</option>
+              </select>
+
+              <div class="payment__label">1-Year Membership: $<span data-dyn="price">260.00</span></div>
 
               <div id="paypal-1-year" class="payment__buttons"></div>
             </div>
@@ -137,17 +141,13 @@
           </p>
           <p>
             View on
-            <a href="https://www.google.com/maps/place/35%C2%B058'58.0%22N+83%C2%B059'19.4%22W/@35.9827794,-83.9894151,169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d35.982778!4d-83.9887131"
-              target="_blank">
+            <a href="https://www.google.com/maps/place/35%C2%B058'58.0%22N+83%C2%B059'19.4%22W/@35.9827794,-83.9894151,169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d35.982778!4d-83.9887131" target="_blank">
               Google Maps
             </a>
           </p>
 
-          <a href="https://www.google.com/maps/place/35%C2%B058'58.0%22N+83%C2%B059'19.4%22W/@35.9827794,-83.9894151,169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d35.982778!4d-83.9887131"
-            target="_blank">
-            <img class="map"
-              src="https://api.mapbox.com/styles/v1/jshurmer/cjhsjbzew0i542tpkxegqi23b/static/-83.99000,35.98000,13.1,0,0/660x380@2x?access_token=pk.eyJ1IjoianNodXJtZXIiLCJhIjoiY2pkM3dpZ3RwMHA4bTJxcWZnOXd4ZDdzMCJ9.ntCJOHn6dfVJjRhvfEuWpw"
-              alt="area map">
+          <a href="https://www.google.com/maps/place/35%C2%B058'58.0%22N+83%C2%B059'19.4%22W/@35.9827794,-83.9894151,169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d35.982778!4d-83.9887131" target="_blank">
+            <img class="map" src="https://api.mapbox.com/styles/v1/jshurmer/cjhsjbzew0i542tpkxegqi23b/static/-83.99000,35.98000,13.1,0,0/660x380@2x?access_token=pk.eyJ1IjoianNodXJtZXIiLCJhIjoiY2pkM3dpZ3RwMHA4bTJxcWZnOXd4ZDdzMCJ9.ntCJOHn6dfVJjRhvfEuWpw" alt="area map">
 
           </a>
         </section>
@@ -155,8 +155,7 @@
         <section class="info info--contact">
           <h2 class="headline">Contact Info</h2>
           <p>
-            For more information, or to inquire about joining contact us at <a
-              href="mailto:cherryhillparkpool@gmail.com">cherryhillparkpool@gmail.com</a>
+            For more information, or to inquire about joining contact us at <a href="mailto:cherryhillparkpool@gmail.com">cherryhillparkpool@gmail.com</a>
           </p>
         </section>
 
@@ -173,8 +172,7 @@
         </p>
 
         <p>
-          Please try again. If you continue having problems email us at <a
-            href="mailto:members@cherryhillparkpool.org">members@cherryhillparkpool.org</a>.
+          Please try again. If you continue having problems email us at <a href="mailto:members@cherryhillparkpool.org">members@cherryhillparkpool.org</a>.
         </p>
       </div>
       <div class="modal__footer">
@@ -196,8 +194,7 @@
         <section data-dyn="newMember" hidden>
           <p>
             We will contact you at <span data-dyn="email"></span> to coordinate getting you a key to the pool!
-            If you don't hear from us in a few days please send us an email at <a
-              href="mailto:members@cherryhillparkpool.org">members@cherryhillparkpool.org</a>.
+            If you don't hear from us in a few days please send us an email at <a href="mailto:members@cherryhillparkpool.org">members@cherryhillparkpool.org</a>.
           </p>
         </section>
 
@@ -216,8 +213,7 @@
   <!-- <script src="https://www.paypal.com/sdk/js?client-id=AQIadMJOqpvS3tRXzKmilOac01cb77QA-Uhh8mLQIAhrs9Un0OCvskLIpUc2XLYhuQ41YWgXYuhSYAYn"> </script> -->
 
   <!-- LIVE: -->
-  <script
-    src="https://www.paypal.com/sdk/js?client-id=AeX5ZMvQiHyDxcLmrs8PuG-JUIabR3YzHGX4Z5ZwCEfGp2BTYQAhNsUZJwERV5b9eBdrYC0M9d-MDghf">
+  <script src="https://www.paypal.com/sdk/js?client-id=AeX5ZMvQiHyDxcLmrs8PuG-JUIabR3YzHGX4Z5ZwCEfGp2BTYQAhNsUZJwERV5b9eBdrYC0M9d-MDghf">
   </script>
 
   <script src="/chp.js"></script>

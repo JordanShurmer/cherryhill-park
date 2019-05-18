@@ -1,7 +1,7 @@
 /*https://type-scale.com/?size=16&scale=1.200&text=Cherryhill%20Park%20Pool&font=Crimson%20Text&fontweight=400&bodyfont=Lato&bodyfontweight=400&lineheight=1.45&backgroundcolor=white&fontcolor=%23333&preview=false*/
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:|Lato:');
 
-html {font-size: 24px;}
+html {font-size: 18px;}
 @media only screen and (min-width: 1020px) {
   html {
     font-size: 16px;

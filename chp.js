@@ -1,4 +1,15 @@
+const membershipTypes = {
+  "new": {
+    "type": "new",
+    "price": '260.00',
+  },
+  "returning": {
+    "type": "returning",
+    "price": '325.00',
+  }
+}
 document.addEventListener('DOMContentLoaded', (event) => {
+  let memberType = membershipTypes.new
   if (paypal) {
 
     //Set up the 1 year button
@@ -8,7 +19,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         return actions.order.create({
           purchase_units: [{
             amount: {
-              value: '325.00'
+              value: memberType.price
             },
             description: "1 Year pool membership: Cherryhill Park Pool"
           }]
@@ -38,6 +49,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
       //render these buttons to the 1-year button area
     }).render('#paypal-1-year');
+
+    //set up the membership type dropdown
+    const annualPaymentContainer = document.querySelector('.payment--annual');
+    const membershipOptions = document.getElementById('membership-type');
+    console.debug({annualPaymentContainer, membershipOptions});
+    membershipOptions.addEventListener('change', function(event) {
+      console.group("MembershipType changed");
+      console.debug(event);
+      memberType = membershipTypes[event.target.value];
+      console.debug({memberType});
+      populateDyn(memberType, annualPaymentContainer);
+      console.groupEnd();
+    });
 
     //Set up the Donate button.
     const donationButton = document.getElementById('do-donation');
@@ -100,7 +124,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 /**
  * Populate the innerHtml (or toggle the hidden attribute) of elements.
- * 
+ *
  * @param {object} config data to populate the data-dyn elements with
  * @param {*} element root element, with data-dyn elements under
  */
